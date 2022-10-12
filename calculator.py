@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter  *
 
 
 class Main(Frame):
@@ -8,14 +8,14 @@ class Main(Frame):
 
     def build(self):
         self.formula = "0"
-        self.lbl = Label(text=self.formula, font=("Times New Roman", 21, "bold"), bg="#000", foreground="#FFF")
+        self.lbl = Label(text=self.formula, font=("Times New Roman", 200, "bold"), bg="#000", foreground="#FFF")
         self.lbl.place(x=11, y=50)
 
         btns = [
             "C", "DEL", "*", "=",
-            "1", "2", "3", "/",
-            "4", "5", "6", "+",
-            "7", "8", "9", "-",
+            "1", "2", "333", "/",
+            "4", "555", "6", "+",
+            "777", "8", "9", "-",
             "(", "0", ")", "X^2"
         ]
 
@@ -33,7 +33,7 @@ class Main(Frame):
 
     def logicalc(self, operation):
         if operation == "C":
-            self.formula = ""
+            self.formula = "text"
         elif operation == "DEL":
             self.formula = self.formula[0:-1]
         elif operation == "X^2":
@@ -46,7 +46,7 @@ class Main(Frame):
             self.formula += operation
         self.update()
 
-    def update(self):
+    def update():
         if self.formula == "":
             self.formula = "0"
         self.lbl.configure(text=self.formula)
