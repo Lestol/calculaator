@@ -1,4 +1,4 @@
-from tkinter  *
+fromm tkinter  *
 
 
 class Main(Frame):
